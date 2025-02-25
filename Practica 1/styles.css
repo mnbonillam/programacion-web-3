@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: #f4f4f4;
+}
+
+.layout1 {
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+.layout1 .cabecera {
+    background: #007bff;
+    color: white;
+}
+
+.layout2 {
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+}
+
+.layout2 .cabecera {
+    background: #007bff;
+    color: white;
+}
+
+.layout2 .pie {
+    background: #333;
+    color: white;
+}
+
+.layout3 {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.layout3 .barra {
+    background: #28a745;
+    color: white;
+}
+
+.layout4 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.layout4 .columna {
+    background: #aaa;
+}
+
+.layout5 {
+    display: grid;
+    grid-template-columns: 250px auto 250px;
+    grid-template-rows: 600px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.layout5 .menu, .layout5 .contenido, .layout5 .barra-derecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.layout5 .menu {
+    background: #6c757d;
+    color: white;
+    height: 100%;
+}
+
+.layout5 .contenido {
+    background: #ddd;
+    height: 100%;
+}
+
+.layout5 .barra-derecha {
+    background: #dc3545;
+    color: white;
+    height: 100%;
+}
+
+.layout {
+    width: 100%;
+    max-width: 1400px;
+    height: 90%;
+    text-align: center;
+    background: white;
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+.cabecera, .pie, .barra, .contenido, .columna, .mitad {
+    padding: 40px;
+    background: #ddd;
+    border: 1px solid #333;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
