@@ -12,8 +12,7 @@ async function main() {
     const [rows] = await connection.query('SELECT * FROM canciones');
     const endQuery = performance.now();
     console.log(`Consulta ejecutada en ${endQuery - startQuery} ms`);
-    
-    // Solo mostrar ID, título y artista
+   
     console.log('Datos de canciones:', rows.map(row => ({
       id: row.id,
       titulo: row.titulo,
