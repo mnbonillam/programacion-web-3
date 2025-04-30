@@ -28,7 +28,7 @@ export const update = (req, res) => {
   });
 };
 
-export const remove = (req, res) => { // Renombrado porque "delete" es palabra reservada
+export const remove = (req, res) => { 
   Autor.delete(req.params.id, (err) => {
     if (err) return res.status(500).json({ error: err });
     res.json({ message: 'Autor eliminado' });

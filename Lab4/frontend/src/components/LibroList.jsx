@@ -12,7 +12,7 @@ function LibroList({ idAutor }) {
       try {
         const res = await axios.get(`http://localhost:3001/api/autores/${idAutor}/libros`);
         setLibros(res.data);
-        setError(null);  // Limpiar cualquier error previo
+        setError(null);  
       } catch (err) {
         console.error('Error al cargar libros:', err);
         setError('Error al cargar los libros.');

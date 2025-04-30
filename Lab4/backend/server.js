@@ -7,7 +7,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use('/api/autores', autorRoutes); // ✅ SOLO UNA VEZ
+app.use('/api/autores', autorRoutes); 
 
 const PORT = 3001;
 app.listen(PORT, () => {
