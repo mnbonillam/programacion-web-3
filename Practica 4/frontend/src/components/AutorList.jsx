@@ -25,6 +25,7 @@ function AutorList({ onEdit, onVerLibros }) {
       <Table striped bordered hover responsive>
         <thead className="table-dark">
           <tr>
+            <th>ID</th>
             <th>Nombre</th>
             <th>Nacionalidad</th>
             <th>Fecha de Nacimiento</th>
@@ -35,6 +36,7 @@ function AutorList({ onEdit, onVerLibros }) {
         <tbody>
           {autores.map((autor) => (
             <tr key={autor.id_autor}>
+              <td>{autor.id_autor}</td>
               <td>{autor.nombre}</td>
               <td>{autor.nacionalidad || '—'}</td>
               <td>{autor.fecha_nacimiento || '—'}</td>
